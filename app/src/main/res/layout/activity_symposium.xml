@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.laundryfy.oneworld.SymposiumActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/symposiumImageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/scan_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@raw/camera"
+                android:onClick="captureImageFromCamera"
+                android:text="Scan" />
+
+
+
+          
+            <Button
+                android:id="@+id/send_vermont"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sendConfirm"
+                android:textAllCaps="false"
+                android:text="Send Vermont" />
+
+            <Button
+                android:id="@+id/send_minnesota"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:onClick="sendConfirm"
+                android:text="Send Minnesota" />
+
+            <Button
+                android:id="@+id/send_massachusetts"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:onClick="sendConfirm"
+                android:text="Send Massachusetts" />
+
+            <Button
+                android:id="@+id/send_all_others"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:onClick="send"
+                android:text="Send All Others" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

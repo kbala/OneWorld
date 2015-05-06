@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.laundryfy.oneworld" >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/page_title"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BadgeScanActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/page_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GiftActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/page_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SmallBoothActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/page_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SymposiumBarCodeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/page_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SymposiumActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/page_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ScanBarcodeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_scan_barcode"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name=".ConfirmActivity"
+            android:label="@string/page_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ResultsActivity"
+            android:label="@string/title_activity_result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SelectAddressActivity"
+            android:label="@string/page_title" >
+        </activity>
+    </application>
+
+</manifest>

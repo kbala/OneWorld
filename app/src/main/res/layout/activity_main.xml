@@ -1,0 +1,122 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Information"
+        android:textColor="#000"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+         android:padding="2dp"
+        android:background="#d3d3d3"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="#fff"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geolocated Event - Tap to Change"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:textAlignment="center"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:text="Pri-Med South" />
+
+        <Spinner
+            android:layout_width="320dp"
+            android:textAlignment="center"
+            android:background="#f4f4f4"
+            android:padding="6dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:entries="@array/booth_array"
+            android:prompt="@string/booth_prompt"
+            android:layout_marginTop="5dp"
+            android:dropDownWidth="320dp"
+            android:gravity="center"
+
+
+
+            >
+
+
+        </Spinner>
+    </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="launchBadgeScan"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:text="Lead Management with Barcodes" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="launchSmallBooth"
+        android:textAllCaps="false"
+        android:text="Lead Management without Barcodes" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="launchGiftForDoctor"
+        android:textAllCaps="false"
+        android:text="@string/foodandbeverages" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Sunshine Reporting - Educational Items" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Sunshine Reporting - Reprints" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="launchSymposiumBarcode"
+        android:textAllCaps="false"
+        android:text="Symposia with Barcodes" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="launchSymposium"
+        android:textAllCaps="false"
+        android:text="Symposia without Barcodes" />
+
+
+
+</LinearLayout>

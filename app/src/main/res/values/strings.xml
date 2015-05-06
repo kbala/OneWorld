@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Customer Engagement</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_badge_scan">Lead Management with Barcodes</string>
+    <string name="title_activity_gift">Sunshine Reporting</string>
+    <string name="title_activity_small_booth">Lead Management without Barcodes</string>
+    <string name="title_activity_symposium">Symposium</string>
+    <string name="title_activity_scan_barcode">Scan Barcode</string>
+    <string name="title_activity_confirm">Confirmation</string>
+    <string name="confirm_message">Thank you!</string>
+    <string name="title_activity_result">Result</string>
+    <string name="page_title">&#160;&#160;&#160;&#160;Customer Engagement</string>
+    <string name="action_back">Change Modules</string>
+    <string name="action_close">Close</string>
+    <string name="action_report">Report a Data Error</string>
+    <string name="action_instructional">Instructional Video</string>
+    <string name="action_support">Support</string>
+    <string name="booth_prompt"> Select a Booth or Symposium</string>
+    <string name="foodandbeverages">Sunshine Reporting - Food &amp; Beverages</string>
+    <string name="title_activity_select_address">SelectAddressActivity</string>
+
+</resources>

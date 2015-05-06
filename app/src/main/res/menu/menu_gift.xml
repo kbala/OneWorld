@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.laundryfy.oneworld.GiftActivity">
+    <item    android:id="@+id/action_close" android:title="@string/action_close"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_back" android:title="@string/action_back"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_report" android:title="@string/action_report"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_instructional" android:title="@string/action_instructional"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_support" android:title="@string/action_support"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
